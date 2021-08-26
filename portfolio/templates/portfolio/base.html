@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+        <title> Joshbickett.com | Code | Startups | Essays</title>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'portfolio/styles.css' %} ">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+
+
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5L447C03NE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-5L447C03NE');
+        </script>
+
+
+    </head>
+
+
+    <body>
+        <div id="layoutDefault">
+
+            <div id="layoutDefault_content">
+                <main>
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-dark navbar-dark fixed-top">
+
+                        <div class="container">
+
+                            <!--Nav Bar Customization-->
+
+                            <a class="navbar-brand" href="">
+
+                                Josh Bickett
+                                <div class="icon-stack icon-stack-xl bg-white text-black my-2 mx-4"><i data-feather="home"></i></div>
+
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i data-feather="menu"></i>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto mr-lg-5">
+                                    <li class="nav-item"><a class="btn-dark btn rounded-pill px-4 ml-lg-4" href="{% url 'portfolio-home' %}">HOME</a></li>
+                                    <li class="nav-item"><a class="btn-dark btn rounded-pill px-4 ml-lg-4" href="{% url 'portfolio-projects' %}">PORTFOLIO</a></li>
+									<li class="nav-item"><a class="btn-dark btn rounded-pill px-4 ml-lg-4" href="{% url 'portfolio-blog' %}">BLOG</a></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+
+                    </nav>
+                    <!--End of Nav-->
+
+					{% block content %}{% endblock %}
+
+
+
+
+
+
+
+                </main>
+            </div>
+
+            <!--Footer-->
+            <div id="layoutDefault_footer">
+                <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="footer-brand">Tell me and I forget. Teach me and I remember. Involve me and I learn.</div>
+                                <div class="mb-3">Benjamin Franklin</div>
+                                <div class="icon-list-social mb-5">
+
+
+                                    <a class="icon-list-social-link" href="https://twitter.com/josh_bickett"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="my-5" />
+                        <div class="row align-items-center">
+                            <div class="col-md-6 small">Copyright &#xA9; Josh Bickett 2020</div>
+                            <div class="col-md-6 text-md-right small">
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true
+            });
+        </script>
+        <script>
+            feather.replace()
+        </script>
+    </body>
+</html>
+

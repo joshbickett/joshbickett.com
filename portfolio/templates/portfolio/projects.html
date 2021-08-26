@@ -1,0 +1,70 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block content %}
+
+<header class="page-header page-header-dark bg-img-cover overlay overlay-80" style='background-image: url("https://static1.squarespace.com/static/53cbed3de4b0c984e431b64d/53cd5808e4b0d40dcfea4855/593d549be4fcb5a7cbb206cc/1497193358774/open-book.jpg?format=1500w")'>
+	<div class="page-header-content pt-10 pb-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8 col-lg-10 text-center">
+					<div data-aos="fade-up">
+						<h1 class="page-header-title">PORTFOLIO</h1>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<div class="svg-border-angled text-gray-400">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100" /></svg>
+	</div>
+</header>
+
+<section class="bg-gray-400 py-10">
+	<div class="container">
+		<div class="card-columns card-columns-portfolio">
+			<a class="card card-portfolio" href="https://apps.apple.com/us/app/gait-a-driver-score-app/id1516971190">
+				<img class="card-img-top" src="{% static 'portfolio/app.png' %}" alt="...">
+				<div class="card-body">
+					<div class="card-title">Gait iOS App - Get a Driver Score</div>
+
+				</div>
+			</a>
+			<a class="card card-portfolio" href="https://gaitcar.com/">
+				<img class="card-img-top" src="{% static 'portfolio/car.png' %}" alt="...">
+				<div class="card-body">
+					<div class="card-title">Gait - Customer Facing Website</div>
+
+				</div>
+			</a>
+			<a class="card card-portfolio" href="http://tryrix.com/">
+				<img class="card-img-top" src="{% static 'portfolio/rix.png' %}" alt="...">
+				<div class="card-body">
+					<div class="card-title">Rix - An AI business assistant built on GPT-3</div>
+
+				</div>
+			</a>
+
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+	<div class="svg-border-angled text-black">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100" /></svg>
+	</div>
+
+
+</section>
+
+
+{% endblock content %}
+
